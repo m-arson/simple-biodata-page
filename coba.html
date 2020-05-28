@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kentood Saya pake yang biasa</title>
+    <style>
+        body {
+            width: 980px;
+            margin: auto;
+        }
+        .menu {
+            background-color: aqua;
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu li {
+            display: inline-block;
+        }
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding: 10px 20px;
+        }
+        .menu li a:hover {
+            background-color: #fff;
+        }
+        .bebek {
+            display: none;
+        }
+        .bebek:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#menu1">Menu 1</a></li>
+            <li><a href="#menu2">Menu 2</a></li>
+            <li><a href="#menu3">Menu 3</a></li>
+            <li><a href="#menu4">Menu 4</a></li>
+            <li><a href="#menu5">Menu 5</a></li>
+        </ul>
+    </div>
+    <div id="menu1" class="bebek">
+        Ini Menu 1
+    </div>
+    <div id="menu2" class="bebek">
+        Ini Menu 2
+    </div>
+    <div id="menu3" class="bebek">
+        Ini Menu 3
+    </div>
+    <div id="menu4" class="bebek">
+        Ini Menu 4
+    </div>
+    <div id="menu5" class="bebek">
+        Ini Menu 5
+    </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eeee;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+.main {
+    min-height: 100vh;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+}
+nav .menu {
+    float: left;
+    background: linear-gradient(to bottom, rgb(250, 250, 255), rgb(242, 242, 247));
+    width: 100%;
+    border-radius: 7px;
+    padding: 0 15px;
+    border: 1px solid rgb(229, 229, 234);
+}
+nav {
+    display: block;
+}
+nav .left_side {
+    float: left;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: inherit;
+}
+nav a:hover, .href-link.active {
+    background-color: #ddd;
+}
+nav .right_side {
+    float: right;
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+}
+.hello_img {
+    max-width: 200px;
+    width: 100%;
+}
+.card_box {
+    width: 100%;
+    text-align: center;
+}
+.card_box .card {
+    width: calc(100% / 3 - 10px);
+    float: left;
+    border:1px solid #eee;
+    padding: 15px;
+    border-radius: 7px;
+}
+.card_box .card:nth-child(2) {
+    margin: 0 15px;
+}
+.card_box .card a {
+    text-decoration: none;
+    color: #555;
+}
+.card_box .caption {
+    margin-top: 10px;
+}
+.container {
+    width: 100%;
+}
+.container .kiri, .container .kanan {
+    display: inline-table;
+    vertical-align: middle;
+}
+.text-center {
+    text-align: center;
+}
+.href-items {
+    display: none;
+}
+.port-cont {
+    width: 100%;
+}
+.port-cont .kiri {
+    float: left;
+    max-width: calc(100% - 200px);
+    width: 100%;
+    display: block;
+}
+.port-cont .kanan {
+    float: right;
+    text-align: center;
+    max-width: 200px;
+    width: 100%;
+}
+.port-cont table {
+    line-height: 2;
+}
+.port-cont table td:nth-child(2),
+.port-cont table td:nth-child(3) {
+    padding-left: 15px;
+}
+#education table td:nth-child(2),
+#education table td:nth-child(3) {
+    padding-left: 15px;
+    line-height: 2;
+}
+#education a {
+    text-decoration: none;
+    color: #333;
+}
+#gallery img {
+    max-width: 200px;
+    width: 100%;
+    display: inline-block;
+}
+#about-web {
+    line-height: 1.5;
+}
+.menu-btn {
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(250, 250, 255), rgb(242, 242, 247));
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+}
+.bar {
+    max-width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #333;
+}
+.bar:last-child {
+    margin-bottom: 0;
+}
+.mobi-porto, .mobi-edu {
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    .menu-btn {
+        display: block;
+    }
+    nav .left_side,
+    nav .right_side,
+    nav .menu {
+        float: none;
+        display: block;
+        padding: 0;
+        border-radius: 0;
+    }
+    nav ul li {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    nav .menu {
+        height:0;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+    }
+    nav .menu.active {
+        height: auto;
+        overflow: auto;
+        transition: all 1s ease-in-out;
+    }
+    .container .kiri, .container .kanan {
+        display: block;
+        text-align: center;
+    }
+    .card_box .card {
+        margin: auto;
+        display: block !important;
+        float:none;
+        width: 100%;
+        clear: both;
+        margin-bottom: 10px;
+    }
+    .card_box .card:nth-child(2) {
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .port-cont .kiri,
+    .port-cont .kanan {
+        display: none;
+    }
+    #gallery img {
+        max-width: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+    #education table {
+        display: none;
+    }
+    .mobi-porto, .mobi-edu {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .mobi-porto div,
+    .mobi-edu div {
+        margin-top: 20px;
+    }
+}
